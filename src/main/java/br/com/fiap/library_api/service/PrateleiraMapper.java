@@ -1,8 +1,8 @@
-package br.com.fiap.primeira_api.service;
+package br.com.fiap.library_api.service;
 
-import br.com.fiap.primeira_api.dto.PrateleiraRequest;
-import br.com.fiap.primeira_api.dto.PrateleiraResponse;
-import br.com.fiap.primeira_api.model.Prateleira;
+import br.com.fiap.library_api.dto.PrateleiraRequest;
+import br.com.fiap.library_api.dto.PrateleiraResponse;
+import br.com.fiap.library_api.model.Prateleira;
 import org.springframework.stereotype.Service;
 
 import java.util.stream.Collectors;

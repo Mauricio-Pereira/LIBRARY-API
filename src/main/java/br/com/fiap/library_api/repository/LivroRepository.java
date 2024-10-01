@@ -1,6 +1,6 @@
-package br.com.fiap.primeira_api.repository;
+package br.com.fiap.library_api.repository;
 
-import br.com.fiap.primeira_api.model.Livro;
+import br.com.fiap.library_api.model.Livro;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package br.com.fiap.primeira_api.model;
+package br.com.fiap.library_api.model;
 
 import jakarta.persistence.*;
 
@@ -29,9 +29,6 @@ public class Livro {
 
     @ManyToMany(mappedBy = "livros", fetch = FetchType.LAZY)
     private Set<Prateleira> prateleiras = new HashSet<>();
-    @ManyToOne
-    @JoinColumn(name = "biblioteca_id")
-    private Biblioteca biblioteca;
 
     public Long getId() {
         return id;

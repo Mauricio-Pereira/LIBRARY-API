@@ -1,4 +1,4 @@
-package br.com.fiap.primeira_api.dto;
+package br.com.fiap.library_api.dto;
 import jakarta.validation.constraints.NotBlank;
 
 public record PrateleiraRequest(

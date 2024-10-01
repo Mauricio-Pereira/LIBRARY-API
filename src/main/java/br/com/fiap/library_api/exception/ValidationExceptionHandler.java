@@ -1,4 +1,4 @@
-package br.com.fiap.primeira_api.exception;
+package br.com.fiap.library_api.exception;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

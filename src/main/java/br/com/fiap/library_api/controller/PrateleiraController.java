@@ -1,12 +1,12 @@
-package br.com.fiap.primeira_api.controller;
+package br.com.fiap.library_api.controller;
 
-import br.com.fiap.primeira_api.dto.PrateleiraRequest;
-import br.com.fiap.primeira_api.dto.PrateleiraResponse;
-import br.com.fiap.primeira_api.model.Livro;
-import br.com.fiap.primeira_api.model.Prateleira;
-import br.com.fiap.primeira_api.repository.LivroRepository;
-import br.com.fiap.primeira_api.repository.PrateleiraRepository;
-import br.com.fiap.primeira_api.service.PrateleiraMapper;
+import br.com.fiap.library_api.dto.PrateleiraRequest;
+import br.com.fiap.library_api.dto.PrateleiraResponse;
+import br.com.fiap.library_api.model.Livro;
+import br.com.fiap.library_api.model.Prateleira;
+import br.com.fiap.library_api.repository.LivroRepository;
+import br.com.fiap.library_api.repository.PrateleiraRepository;
+import br.com.fiap.library_api.service.PrateleiraMapper;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -19,7 +19,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

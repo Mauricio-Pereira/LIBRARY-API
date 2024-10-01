@@ -1,10 +1,10 @@
-package br.com.fiap.primeira_api.controller;
+package br.com.fiap.library_api.controller;
 
-import br.com.fiap.primeira_api.dto.LivroRequest;
-import br.com.fiap.primeira_api.dto.LivroResponse;
-import br.com.fiap.primeira_api.model.Livro;
-import br.com.fiap.primeira_api.repository.LivroRepository;
-import br.com.fiap.primeira_api.service.LivroMapper;
+import br.com.fiap.library_api.dto.LivroRequest;
+import br.com.fiap.library_api.dto.LivroResponse;
+import br.com.fiap.library_api.model.Livro;
+import br.com.fiap.library_api.repository.LivroRepository;
+import br.com.fiap.library_api.service.LivroMapper;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -26,7 +26,6 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
 @RequestMapping(value = "/livros", produces = {"application/json"})
@@ -76,12 +75,6 @@ public class LivroController {
         List<LivroResponse> listaLivrosResponse = new ArrayList<>();
         for (Livro livro : listaLivros){
             LivroResponse livroResponse = livroMapper.livroToResponse(livro);
-//            livroResponse.setLink(
-//                    linkTo(
-//                            methodOn(LivroController.class)
-//                                    .readLivroById(livro.getId())
-//                    ).withSelfRel()
-//            );
             listaLivrosResponse.add(livroResponse);
         }
         return new ResponseEntity<>(listaLivrosResponse, HttpStatus.CREATED);

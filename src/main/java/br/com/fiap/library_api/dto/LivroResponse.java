@@ -1,4 +1,4 @@
-package br.com.fiap.primeira_api.dto;
+package br.com.fiap.library_api.dto;
 
 import org.springframework.hateoas.Link;
 

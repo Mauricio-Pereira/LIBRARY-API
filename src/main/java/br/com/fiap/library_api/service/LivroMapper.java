@@ -1,8 +1,8 @@
-package br.com.fiap.primeira_api.service;
-import br.com.fiap.primeira_api.controller.LivroController;
-import br.com.fiap.primeira_api.dto.LivroRequest;
-import br.com.fiap.primeira_api.dto.LivroResponse;
-import br.com.fiap.primeira_api.model.Livro;
+package br.com.fiap.library_api.service;
+import br.com.fiap.library_api.controller.LivroController;
+import br.com.fiap.library_api.dto.LivroRequest;
+import br.com.fiap.library_api.dto.LivroResponse;
+import br.com.fiap.library_api.model.Livro;
 import org.springframework.stereotype.Service;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;

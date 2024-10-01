@@ -1,6 +1,6 @@
-package br.com.fiap.primeira_api.dto;
+package br.com.fiap.library_api.dto;
 
-import br.com.fiap.primeira_api.model.Categoria;
+import br.com.fiap.library_api.model.Categoria;
 import jakarta.validation.constraints.*;
 
 public record LivroRequest(

@@ -1,4 +1,4 @@
-package br.com.fiap.primeira_api.model;
+package br.com.fiap.library_api.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -1,4 +1,4 @@
-package br.com.fiap.primeira_api;
+package br.com.fiap.library_api;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;

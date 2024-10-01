@@ -1,4 +1,4 @@
-package br.com.fiap.primeira_api.model;
+package br.com.fiap.library_api.model;
 
 public enum Categoria {
     ROMANCE("Romance"),
