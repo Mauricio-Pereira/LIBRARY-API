@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @OpenAPIDefinition(info=
 @Info(title="API de Livros", version="0.0.1", description="Exemplo de API RESTful com Spring Boot"))
-public class PrimeiraApiApplication {
+public class LibraryApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PrimeiraApiApplication.class, args);
+		SpringApplication.run(LibraryApiApplication.class, args);
 	}
 
 }
